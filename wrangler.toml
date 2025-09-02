@@ -1,0 +1,11 @@
+name = "openai-proxy"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+
+[vars]
+# セキュリティ上は "*" ではなく公開サイトのオリジンに限定するのが推奨
+ALLOW_ORIGIN = "https://YOUR_SUBDOMAIN.workers.dev/chat"
+
+[observability]
+enabled = true
+
